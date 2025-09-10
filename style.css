@@ -1,0 +1,161 @@
+:root {
+  --whiteMain: #ffffff;
+  --secundaryGray: #c0c0c0;
+  --colorBtn: #167bf7;
+  --btnEffect: #3c92fa;
+  --bgColor: #00030c;
+  --mainFont: "Inter";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bgColor);
+  color: var(--whiteMain);
+  font-family: var(--mainFont);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.first-section {
+  background-image: url("./assets/Background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.container__box {
+  margin: 0 6em;
+}
+
+.container__title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.container__image {
+  margin: 1em 0 2em 0;
+}
+
+.container__botao {
+  background-color: var(--colorBtn);
+  border-radius: 5px;
+  padding: 1em;
+  color: var(--whiteMain);
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+.container__botao:hover {
+  background-color: var(--btnEffect);
+}
+
+.container__botaoSec {
+  background-color: transparent;
+  border: 2px solid var(--whiteMain);
+  border-radius: 5px;
+  padding: 1em;
+  color: var(--whiteMain);
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+}
+.container__botaoSec:hover {
+  background-color: var(--btnEffect);
+  border: 2px solid var(--btnEffect);
+}
+
+.container__warning {
+  font-size: 12px;
+  margin-top: 1em;
+}
+
+.secund-section {
+  align-items: center;
+  margin: 0 10em;
+}
+
+.secundary__image {
+  width: 80%;
+}
+
+.title__description {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--whiteMain);
+  margin-bottom: 0.1em;
+}
+
+.text__description {
+  color: var(--secundaryGray);
+}
+
+.secundary__botao {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.container__description {
+  padding: 2em;
+}
+
+.devices__section {
+  text-align: center;
+}
+
+.devices__title {
+  font-size: 48px;
+}
+
+.devices__name {
+  font-size: 32px;
+  color: var(--whiteMain);
+}
+
+.devices__list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 3em 0;
+}
+
+.footer {
+  text-align: center;
+  margin: 10em 8em 1em 8em;
+
+}
+
+.footer__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+  gap: 2em;
+  font-size: 16px;
+}
+
+.footer__text {
+  color: var(--secundaryGray);
+  font-size: 14px;
+}
+
+.footer__a {
+  text-decoration: none;
+  color: var(--whiteMain);
+}
+.footer__a:hover {
+  color: var(--colorBtn);
+}
+.footer__a:active{
+  color: var(--btnEffect);
+}
